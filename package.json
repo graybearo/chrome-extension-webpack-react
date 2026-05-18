@@ -24,6 +24,7 @@
 	],
 	"author": "graybear",
 	"license": "MIT",
+	"packageManager": "pnpm@10.33.2",
 	"homepage": "https://github.com/graybearo/chrome-extension-webpack-react#readme",
 	"bugs": "https://github.com/graybearo/chrome-extension-webpack-react/issues",
 	"repository": {
