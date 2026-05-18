@@ -1,0 +1,60 @@
+{
+	"name": "chrome-extension-webpack-react",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Chrome extension boilerplate — Manifest V3 starter with webpack 5, React, TypeScript, live reload via webpack-ext-reloader-next, typed message passing, and service worker keepalive. Works in Chrome, Edge, and Firefox.",
+	"keywords": [
+		"chrome-extension",
+		"browser-extension",
+		"chrome-extension-boilerplate",
+		"chrome-extension-starter",
+		"chrome-extension-template",
+		"webpack-extension-boilerplate",
+		"extension-boilerplate",
+		"mv3",
+		"manifest-v3",
+		"webpack",
+		"webpack-5",
+		"react",
+		"typescript",
+		"web-extension",
+		"webextension",
+		"hot-reload",
+		"live-reload"
+	],
+	"author": "graybear",
+	"license": "MIT",
+	"homepage": "https://github.com/graybearo/chrome-extension-webpack-react#readme",
+	"bugs": "https://github.com/graybearo/chrome-extension-webpack-react/issues",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/graybearo/chrome-extension-webpack-react.git"
+	},
+	"scripts": {
+		"dev": "webpack --watch --mode development",
+		"build": "webpack --mode production",
+		"typecheck": "tsc --noEmit",
+		"zip": "node scripts/zip.cjs"
+	},
+	"dependencies": {
+		"mv3-keepalive": "^0.1.0",
+		"mv3-message-router": "^0.1.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@types/chrome": "^0.0.280",
+		"@types/node": "^22.9.0",
+		"@types/react": "^18.3.12",
+		"@types/react-dom": "^18.3.1",
+		"copy-webpack-plugin": "^12.0.2",
+		"css-loader": "^7.1.2",
+		"html-webpack-plugin": "^5.6.3",
+		"style-loader": "^4.0.0",
+		"ts-loader": "^9.5.1",
+		"typescript": "^5.6.0",
+		"webpack": "^5.95.0",
+		"webpack-cli": "^5.1.4",
+		"webpack-ext-reloader-next": "^1.0.0"
+	}
+}

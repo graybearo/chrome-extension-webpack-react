@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Chrome Extension Webpack React Starter",
+	"version": "0.0.1",
+	"description": "Starter Manifest V3 extension — webpack + React + TypeScript with live reload, typed messaging, and SW keepalive.",
+	"action": {
+		"default_popup": "popup.html",
+		"default_title": "Webpack React Starter"
+	},
+	"options_page": "options.html",
+	"background": {
+		"service_worker": "background.js",
+		"type": "module"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://*/*"],
+			"js": ["content.js"],
+			"run_at": "document_idle"
+		}
+	],
+	"permissions": ["alarms", "storage"]
+}
